@@ -1,0 +1,33 @@
+@import '../../../../styles/variables';
+
+.instructor {
+  > div:not(:last-child),
+  h4 {
+    margin-bottom: 1.5625rem;
+  }
+
+  h4 {
+    font-size: $font-default;
+    font-weight: 700;
+  }
+
+  p {
+    line-height: 1.5625;
+  }
+
+  &__info,
+  &__note {
+    font-size: $font-s;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &__info {
+    p {
+      color: $lightGrey;
+    }
+  }
+
+  &__note {
+    font-weight: 600;
+  }
+}

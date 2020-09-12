@@ -1,0 +1,22 @@
+.abstract {
+  &__img {
+    width: 860px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  > div:not(:last-child) {
+    margin-bottom: 1.5625rem;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .abstract {
+    &__img {
+      width: 600px;
+    }
+  }
+}

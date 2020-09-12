@@ -1,0 +1,34 @@
+@import '../../../../styles/variables';
+
+.wkshop-info {
+  background-color: $offWhite;
+  font-size: $font-m;
+  height: 400px;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  color: black;
+  margin-bottom: 4.6875rem; //75px
+
+  > div:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+
+  h5 {
+    font-weight: 500;
+    color: $lightGrey;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: $font-m;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+}

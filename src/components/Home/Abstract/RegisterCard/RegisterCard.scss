@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+
+.register-card {
+  background-color: $limeGreen;
+  height: 100px;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  //padding: 1.65625rem 1.875rem;
+
+  h2 {
+    font-weight: 700;
+  }
+
+  &__cta {
+    background-color: white;
+    color: black;
+
+    a {
+      font-weight: 600;
+    }
+  }
+}

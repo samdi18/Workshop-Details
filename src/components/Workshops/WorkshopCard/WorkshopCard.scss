@@ -1,0 +1,40 @@
+@import '../../../styles//variables';
+
+.wkshop-card {
+  &__img {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 1.375rem;
+    margin-top: 0.625rem;
+    box-shadow: 0px 10px 20px #01368633;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  h5 {
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+  }
+
+  &__link {
+    a {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $skyBlue;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .wkshop-card {
+    &__img {
+      width: 200px;
+      height: 150px;
+    }
+  }
+}

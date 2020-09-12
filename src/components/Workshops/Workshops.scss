@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.wkshops {
+  height: 575px;
+  background-color: $offWhite;
+  padding-top: 4.6875rem;
+  padding-bottom: 4.6875rem;
+
+  p {
+    color: $skyBlue;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .wkshops {
+    padding-top: 3.5rem;
+    height: 475px;
+  }
+}

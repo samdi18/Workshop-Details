@@ -1,0 +1,64 @@
+@import '../../../styles/variables';
+
+.details {
+  margin-left: 3.125rem;
+
+  h1 {
+    margin-bottom: 3.125rem;
+  }
+
+  &__links {
+    margin-bottom: 2.125rem;
+
+    a {
+      position: relative;
+      font-weight: 700;
+      font-size: $font-m;
+      text-transform: uppercase;
+      color: $lightGrey;
+      transition: color 400ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        background: $limeGreen;
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+      }
+
+      // &:hover {
+      //   color: black;
+      //   opacity: 0.75;
+
+      //   &::before {
+      //     opacity: 1;
+      //   }
+      // }
+    }
+  }
+
+  .active {
+    color: black;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .details {
+    &__links {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}

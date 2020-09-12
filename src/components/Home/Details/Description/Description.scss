@@ -1,0 +1,30 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/typography';
+
+.description {
+  > div:not(:last-child),
+  h4 {
+    margin-bottom: 1.5625rem;
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+
+  h5 {
+    font-weight: 600;
+  }
+
+  &__info,
+  &__note {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5625rem;
+  }
+
+  &__info {
+    p {
+      color: $lightGrey;
+      font-size: $font-s;
+    }
+  }
+}

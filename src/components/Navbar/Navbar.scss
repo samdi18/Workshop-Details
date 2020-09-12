@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.header {
+  nav {
+    text-transform: uppercase;
+    padding: 1.8rem 0;
+  }
+  &__logo {
+    img {
+      width: 125px;
+    }
+  }
+
+  a {
+    font-size: $font-xs;
+  }
+
+  &__rightnav {
+    width: 52%;
+  }
+
+  &__links {
+    //margin-left: 450px;
+    a {
+      font-weight: 500;
+
+      &:not(:last-child) {
+        margin-right: 1.5625rem;
+      }
+    }
+  }
+
+  &__cta {
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .header {
+    &__logo {
+      img {
+        width: 100px;
+      }
+    }
+
+    &__rightnav {
+      width: 55%;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+}
