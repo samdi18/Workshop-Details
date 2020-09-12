@@ -31,6 +31,10 @@ a {
   font-size: $font-s;
 }
 
+.bengali {
+  font: normal normal bold 26px KongshoMatraMJ;
+}
+
 @media only screen and (max-device-width: 1366px) {
   h1 {
     font-size: 32px; //48px
@@ -60,5 +64,9 @@ a {
 
   a {
     font-size: $font-s;
+  }
+
+  .bengali {
+    font: normal normal bold 22px KongshoMatraMJ;
   }
 }

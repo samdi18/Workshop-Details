@@ -32,3 +32,11 @@
     text-transform: uppercase;
   }
 }
+
+@media only screen and (max-device-width: 1366px) {
+  .wkshop-info {
+    p {
+      font-size: 15px;
+    }
+  }
+}
